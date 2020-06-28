@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 26 13:18:44 IST 2020</td>
+<td>Started on:</td><td>Sun Jun 28 18:41:20 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>172 seconds (172350 ms)</td>
+<tr><td>Total time:</td><td>340 seconds (340154 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: row 1 or column 0 does not exist  in xls, row 1 or column 1 does not exist  in xls, row 1 or column 2 does not exist  in xls, row 1 or column 3 does not exist  in xls, row 1 or column 4 does not exist  in xls</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+<td title='testCase.TestPage.TestOne()'><b>TestOne</b><br>Test class: testCase.TestPage<br>Parameters: chrome, Delhi , Manali, 16/07/2020, 02:30 AM, sedan</td>
+<td><div><pre>java.lang.AssertionError: No clickable element By.xpath: //span[@class=&apos;chNavIcon appendBottom2 chSprite chCabs&apos;]
+	at org.testng.Assert.fail(Assert.java:94)
+	at Util.BaseUI.toClick(BaseUI.java:198)
+	at webPages.TravelPage.bookCab(TravelPage.java:79)
+	at testCase.TestPage.TestOne(TestPage.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -111,18 +105,12 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1069584108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1069584108'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+</pre></div><a href='#' onClick='toggleBox("stack-trace777341499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777341499'><pre>java.lang.AssertionError: No clickable element By.xpath: //span[@class=&apos;chNavIcon appendBottom2 chSprite chCabs&apos;]
+	at org.testng.Assert.fail(Assert.java:94)
+	at Util.BaseUI.toClick(BaseUI.java:198)
+	at webPages.TravelPage.bookCab(TravelPage.java:79)
+	at testCase.TestPage.TestOne(TestPage.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -148,10 +136,10 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>0</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>69</td>
+<td>testCase.TestPage@6f1fba17</td></tr>
 <tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: , , , , </td>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: row 1 or column 0 does not exist  in xls, row 1 or column 1 does not exist  in xls, row 1 or column 2 does not exist  in xls, row 1 or column 3 does not exist  in xls, row 1 or column 4 does not exist  in xls</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
@@ -160,9 +148,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -187,8 +175,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace234223040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace234223040'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+</pre></div><a href='#' onClick='toggleBox("stack-trace214320652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace214320652'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -196,9 +184,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -225,9 +213,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>testCase.TestPage@6f1fba17</td></tr>
 <tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: , , , , </td>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: , , , , </td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
@@ -236,9 +224,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -263,8 +251,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1957282992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1957282992'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+</pre></div><a href='#' onClick='toggleBox("stack-trace1454870101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454870101'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -272,9 +260,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -301,9 +289,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>testCase.TestPage@6f1fba17</td></tr>
 <tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: , , , , </td>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: , , , , </td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
@@ -312,9 +300,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -339,8 +327,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2042917213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2042917213'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+</pre></div><a href='#' onClick='toggleBox("stack-trace1991724700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1991724700'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -348,9 +336,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -377,9 +365,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>testCase.TestPage@6f1fba17</td></tr>
 <tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: , , , , </td>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: , , , , </td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
@@ -388,9 +376,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -415,8 +403,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1801422599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1801422599'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+</pre></div><a href='#' onClick='toggleBox("stack-trace259077766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace259077766'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: RemoteWebDriver
@@ -424,9 +412,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at team1.cabBooking.BaseUI.invokeBrowser(BaseUI.java:65)
-	at team1.cabBooking.GiftPage.bookGift(GiftPage.java:54)
-	at team1.cabBooking.TestPage.bookGift(TestPage.java:38)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -453,7 +441,83 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>testCase.TestPage@6f1fba17</td></tr>
+<tr>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: , , , , </td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace829737737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace829737737'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at Util.BaseUI.invokeBrowser(BaseUI.java:65)
+	at webPages.GiftPage.bookGift(GiftPage.java:55)
+	at testCase.TestPage.bookGift(TestPage.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>testCase.TestPage@6f1fba17</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -463,15 +527,10 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='team1.cabBooking.TestPage.TestOne()'><b>TestOne</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: chrome, Delhi , Manali, 16/07/2020, 02:30 AM, sedan</td>
+<td title='testCase.TestPage.bookGift()'><b>bookGift</b><br>Test class: testCase.TestPage<br>Parameters: chrome, 1000, 18/08/2020, Arun, abcd</td>
 <td></td>
-<td>55</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
-<tr>
-<td title='team1.cabBooking.TestPage.bookGift()'><b>bookGift</b><br>Test class: team1.cabBooking.TestPage<br>Parameters: chrome, 1000, 18/08/2020, Arun, abcd</td>
-<td></td>
-<td>112</td>
-<td>team1.cabBooking.TestPage@6f1fba17</td></tr>
+<td>260</td>
+<td>testCase.TestPage@6f1fba17</td></tr>
 </table><p>
 </body>
 </html>

@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="team1.cabBooking.TestPage"/>
+      <class name="testCase.TestPage"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="team1.cabBooking.TestPage">
+      <class name="testCase.TestPage">
         <methods>
-          <include name="bookGift" invocation-numbers="1 2 3 4 5"/>
           <include name="aftertest"/>
+          <include name="TestOne" invocation-numbers="0"/>
+          <include name="bookGift" invocation-numbers="1 2 3 4 5"/>
         </methods>
-      </class> <!-- team1.cabBooking.TestPage -->
+      </class> <!-- testCase.TestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
